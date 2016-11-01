@@ -1,0 +1,241 @@
+fileFormatVersion: 2
+guid: 946113f4410da324085798dd91f40599
+timeCreated: 1477997795
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Character_Draft1_0
+    21300002: Character_Draft1_1
+    21300004: Character_Draft1_2
+    21300006: Character_Draft1_3
+    21300008: Character_Draft1_4
+    21300010: Character_Draft1_5
+    21300012: Character_Draft1_6
+    21300014: Character_Draft1_7
+    21300016: Character_Draft1_8
+    21300018: Character_Draft1_9
+    21300020: Character_Draft1_10
+    21300022: Character_Draft1_11
+    21300024: Character_Draft1_12
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Character_Draft1_0
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 1904
+        width: 15
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Character_Draft1_1
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 1419
+        width: 301
+        height: 426
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Character_Draft1_2
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 1363
+        width: 340
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Character_Draft1_3
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 1444
+        width: 421
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Character_Draft1_4
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 1839
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Character_Draft1_5
+      rect:
+        serializedVersion: 2
+        x: 1377
+        y: 1457
+        width: 364
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Character_Draft1_6
+      rect:
+        serializedVersion: 2
+        x: 1578
+        y: 1841
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Character_Draft1_7
+      rect:
+        serializedVersion: 2
+        x: 1833
+        y: 1428
+        width: 314
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Character_Draft1_8
+      rect:
+        serializedVersion: 2
+        x: 2249
+        y: 1375
+        width: 330
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Character_Draft1_9
+      rect:
+        serializedVersion: 2
+        x: 2653
+        y: 1437
+        width: 395
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Character_Draft1_10
+      rect:
+        serializedVersion: 2
+        x: 3134
+        y: 1431
+        width: 363
+        height: 414
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Character_Draft1_11
+      rect:
+        serializedVersion: 2
+        x: 2648
+        y: 1536
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Character_Draft1_12
+      rect:
+        serializedVersion: 2
+        x: 3127
+        y: 1536
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
