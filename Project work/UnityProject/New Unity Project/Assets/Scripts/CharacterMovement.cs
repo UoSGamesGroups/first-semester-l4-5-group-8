@@ -88,19 +88,22 @@ public class CharacterMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Ladder")
-        {
+        if(collision.gameObject.tag == "Ladder"){
+
             GetComponent<Rigidbody2D>().gravityScale = 0;
             GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, 0);
             climbing = true;
+        }
 
+        if (collision.gameObject.tag == "Boulder") {
+            Destroy(gameObject);
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Ladder")
-        {
+        if(collision.gameObject.tag == "Ladder"){
+
             GetComponent<Rigidbody2D>().gravityScale = 15;
             climbing = false;
         }
