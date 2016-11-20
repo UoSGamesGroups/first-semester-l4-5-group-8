@@ -4,6 +4,8 @@ using System.Collections;
 public class Disappear4 : MonoBehaviour {
 
 	public SpriteRenderer sr;
+	public KeyCode keySpace;
+	public BoxCollider2D bc;
 
 	// Use this for initialization
 	void Start ()
@@ -24,6 +26,7 @@ public class Disappear4 : MonoBehaviour {
 			Changer ();
 		}
 	}
+
 	public void OnTriggerExit2D(Collider2D collision)
 	{
 		if (collision.gameObject.tag == "Player") {
@@ -43,6 +46,7 @@ public class Disappear4 : MonoBehaviour {
 		{
 			yield return new WaitForSeconds(1);
 			sr.enabled = true;
+
 		}
 	}
 }

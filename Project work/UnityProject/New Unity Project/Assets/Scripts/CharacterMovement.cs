@@ -5,11 +5,11 @@ using UnityEngine.SceneManagement;
 public class CharacterMovement : MonoBehaviour
 {
 
-    public KeyCode keyLeft, keyRight, keyJump, keyDown;
+	public KeyCode keyLeft, keyRight, keyJump, keyDown, keySpace;
 
     public float speed, jumpPower, climbSpeed;
 
-    public bool grounded, climbing;
+    public bool grounded, climbing, interact;
 
     private Vector3 defaultScale;
     private Vector2 velocity;
@@ -20,32 +20,24 @@ public class CharacterMovement : MonoBehaviour
     private void Start()
     {
         defaultScale = GetComponent<Transform>().localScale;
-    }
+	}
 
     private void UserInput()
-    {
-        if (Input.GetKey(keyLeft))
-        {
-            velocity.x = -speed;
-            GetComponent<Animator>().SetBool("Walking", true);
-            GetComponent<Transform>().localScale = new Vector3(-defaultScale.x, defaultScale.y, defaultScale.z);
-        }
-        else if (Input.GetKey(keyRight))
-        {
-            velocity.x = speed;
-            GetComponent<Animator>().SetBool("Walking", true);
-            GetComponent<Transform>().localScale = new Vector3(defaultScale.x, defaultScale.y, defaultScale.z);
+	{
+		if (Input.GetKey (keyLeft)) {
+			velocity.x = -speed;
+			GetComponent<Animator> ().SetBool ("Walking", true);
+			GetComponent<Transform> ().localScale = new Vector3 (-defaultScale.x, defaultScale.y, defaultScale.z);
+		} else if (Input.GetKey (keyRight)) {
+			velocity.x = speed;
+			GetComponent<Animator> ().SetBool ("Walking", true);
+			GetComponent<Transform> ().localScale = new Vector3 (defaultScale.x, defaultScale.y, defaultScale.z);
 
-        }
-        else
-        {
-            velocity.x = 0;
-            GetComponent<Animator>().SetBool("Walking", false);
-        }
-
-        
-
-
+		} else {
+			velocity.x = 0;
+			GetComponent<Animator> ().SetBool ("Walking", false);
+		}
+			
         if(climbing)
         {
             if (Input.GetKey(keyJump))
@@ -69,8 +61,7 @@ public class CharacterMovement : MonoBehaviour
                 velocity.y = jumpPower;
             }
         }
-
-
+			
     }
 
     private void Update()
@@ -87,7 +78,7 @@ public class CharacterMovement : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.tag == "Ladder"){
 
@@ -99,6 +90,7 @@ public class CharacterMovement : MonoBehaviour
         if (collision.gameObject.tag == "Boulder") {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
+
     }
 
     private void OnTriggerExit2D(Collider2D collision)

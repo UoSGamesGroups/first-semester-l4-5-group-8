@@ -4,6 +4,8 @@ using System.Collections;
 public class Disappear2 : MonoBehaviour {
 
 	public SpriteRenderer sr;
+	public KeyCode keySpace;
+	public BoxCollider2D bc;
 
 	// Use this for initialization
 	void Start ()
@@ -30,7 +32,7 @@ public class Disappear2 : MonoBehaviour {
 			sr.enabled = true;
 		}
 	}
-
+	
 	public void Changer()
 	{
 		if (sr.enabled == false)
