@@ -9,7 +9,7 @@ public class CharacterMovement : MonoBehaviour
 
     public float speed, jumpPower, climbSpeed;
 
-    public bool grounded, climbing, interact;
+    public bool grounded, climbing, jumping, interact;
 
     private Vector3 defaultScale;
     private Vector2 velocity;
@@ -58,8 +58,12 @@ public class CharacterMovement : MonoBehaviour
         {
             if ((Input.GetKeyDown(keyJump)) && grounded)
             {
+                GetComponent<Animator>().SetBool("Jump", true);
                 velocity.y = jumpPower;
             }
+
+            else
+            { GetComponent<Animator>().SetBool("Jump", false); }
         }
 			
     }
