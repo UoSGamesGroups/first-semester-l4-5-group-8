@@ -58,12 +58,8 @@ public class CharacterMovement : MonoBehaviour
         {
             if ((Input.GetKeyDown(keyJump)) && grounded)
             {
-                GetComponent<Animator>().SetBool("Jump", true);
                 velocity.y = jumpPower;
             }
-
-            else
-            { GetComponent<Animator>().SetBool("Jump", false); }
         }
 			
     }
@@ -71,6 +67,7 @@ public class CharacterMovement : MonoBehaviour
     private void Update()
     {
         grounded = Physics2D.OverlapCircle(feet.position, 0.5f, layerGround);
+        GetComponent<Animator>().SetBool("Jump", !grounded);
 
         UserInput();
 
