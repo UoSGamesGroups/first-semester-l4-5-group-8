@@ -7,6 +7,8 @@ public class CharacterMovement : MonoBehaviour
 
 	public KeyCode keyLeft, keyRight, keyJump, keyDown, keySpace;
 
+    public int SceneID;
+
     public float speed, jumpPower, climbSpeed;
 
     public bool grounded, climbing, jumping, interact;
@@ -89,7 +91,7 @@ public class CharacterMovement : MonoBehaviour
         }
 
         if (collision.gameObject.tag == "Boulder") {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            Death();
         }
 
     }
@@ -101,6 +103,10 @@ public class CharacterMovement : MonoBehaviour
             GetComponent<Rigidbody2D>().gravityScale = 15;
             climbing = false;
         }
+    }
+
+    public void Death() {
+        SceneManager.LoadScene(SceneID);
     }
 
 }
