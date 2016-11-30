@@ -7,6 +7,7 @@ public class LeverPuzzleController : MonoBehaviour {
     public Disappear[] Levers;
     public int[] PatternTimes;
     public float WaitTime;
+	public KeyCode keySpace;
 
     public bool ShowingLights;
     public bool Completed;
@@ -41,6 +42,7 @@ public class LeverPuzzleController : MonoBehaviour {
 
             Completed = true;
         }
+
     }
 
     public IEnumerator ResetLights()
@@ -107,6 +109,10 @@ public class LeverPuzzleController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if (Input.GetKeyDown(keySpace))
+		{
+			int current = Presses.Count + 1;
+		}
 	
 	}
 }
