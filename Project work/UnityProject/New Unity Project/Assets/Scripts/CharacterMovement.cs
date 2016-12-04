@@ -90,7 +90,7 @@ public class CharacterMovement : MonoBehaviour
             climbing = true;
         }
 
-        if (collision.gameObject.tag == "Boulder") {
+        if (collision.gameObject.tag == "Boulder" || collision.gameObject.tag == "Spikes") {
             Death();
         }
 
