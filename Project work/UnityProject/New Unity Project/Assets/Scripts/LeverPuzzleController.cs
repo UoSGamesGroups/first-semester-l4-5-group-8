@@ -36,10 +36,9 @@ public class LeverPuzzleController : MonoBehaviour {
         {
             // challenge completed
             Presses.Clear();
-
             Door.OpenDoor();
-
             Completed = true;
+        
         }
     }
 
